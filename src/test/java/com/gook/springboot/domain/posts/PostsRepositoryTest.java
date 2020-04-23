@@ -54,7 +54,7 @@ public class PostsRepositoryTest {
     @Test
     public void BaseTimeEntity_등록() throws Exception {
         //given
-        LocalDateTime now = LocalDateTime.now();
+        LocalDateTime now = LocalDateTime.of(2019,02, 23, 4, 40);
         postsRepository.save(Posts.builder()
                 .title("title")
                 .content("content")
